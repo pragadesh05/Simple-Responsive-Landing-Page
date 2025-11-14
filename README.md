@@ -1,1 +1,46 @@
-# Simple-Responsive-Landing-Page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Responsive Landing Page</title>
+    <link rel="stylesheet" href="srp.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">MyBrand</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main class="hero-section">
+        <h1> Launch Your Idea Today</h1>
+        <p>A simple, clean, and responsive design built with pure HTML and CSS.</p>
+        <a href="#signup" class="cta-button">Get Started Now</a>
+    </main>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>Responsive</h3>
+            <p>Looks great on all devices: desktop, tablet, and mobile phones.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Simple</h3>
+            <p>Minimalist design focusing purely on core content and conversions.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Fast</h3>
+            <p>Lightweight code ensures quick loading times for your visitors.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MyBrand Landing Page</p>
+    </footer>
+
+</body>
+</html>
