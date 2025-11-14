@@ -1,0 +1,138 @@
+  
+
+/* 1. Global/Reset Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f9;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h3 {
+    margin-top: 0;
+}
+
+/* 2. Navigation Bar (Flexbox) */
+.navbar {
+    display: flex; /* Enable Flexbox */
+    justify-content: space-between; /* Space out logo and nav links */
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #f8f9fa;
+}
+
+/* 3. Hero Section (Centering) */
+.hero-section {
+    background-color: #e9ecef;
+    padding: 100px 30px;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+}
+
+/* 4. Features Section (Flexbox for Desktop/Tablet) */
+.features {
+    display: flex; /* Arrange cards horizontally */
+    justify-content: space-around;
+    padding: 40px 30px;
+    gap: 20px;
+}
+
+.feature-card {
+    flex: 1; /* Allows each card to take up equal space */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* 5. Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em;
+}
+
+/* 6. Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Stack navigation items vertically */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+        padding: 5px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    /* Stack feature cards vertically */
+    .features {
+        flex-direction: column;
+        align-items: center; /* Center cards in the column */
+        padding: 20px;
+    }
+
+    .feature-card {
+        max-width: 100%; /* Full width on small screens */
+        margin-bottom: 15px;
+    }
+
+    /* Adjust Hero text size for better readability on small screens */
+    .hero-section h1 {
+        font-size: 2em;
+    }
+} 
